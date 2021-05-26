@@ -40,3 +40,4 @@ C:\Users\3zAl7arbi\RiderProjects\Shopping\Shopping\bin\Debug\net5.0\Shopping.Vie
 C:\Users\3zAl7arbi\RiderProjects\Shopping\Shopping\obj\Debug\net5.0\Shopping.Views.pdb
 C:\Users\3zAl7arbi\RiderProjects\Shopping\Shopping\obj\Debug\net5.0\Shopping.genruntimeconfig.cache
 C:\Users\3zAl7arbi\RiderProjects\Shopping\Shopping\obj\Debug\net5.0\Shopping.csproj.CopyComplete
+C:\Users\3zAl7arbi\RiderProjects\Shopping\Shopping\obj\Debug\net5.0\Razor\Views\Shared\_LayoutDesign.cshtml.g.cs

@@ -17,7 +17,7 @@ namespace Shopping.Controllers
             ViewData["Products"] = _products;
             return View();
         }
-        public IActionResult Details(int id = 1)
+        public IActionResult Details(int? id )
         {
             
             ViewData["Product"] = _products.Find(model => model.Id == id);
