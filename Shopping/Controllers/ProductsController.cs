@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Shopping.Models;
 namespace Shopping.Controllers
@@ -12,15 +13,17 @@ namespace Shopping.Controllers
             new ProductModel(){Id = 3 , Name = "Espresso" , Price = 13.0, img ="https://images.pexels.com/photos/272887/pexels-photo-272887.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" }
         }; 
         // GET
-        public IActionResult Index()
+        public IActionResult Index( String color = "" )
         {
             ViewData["Products"] = _products;
+            ViewData["tcolor"] = color;
             return View();
         }
         public IActionResult Details(int? id )
         {
             
             ViewData["Product"] = _products.Find(model => model.Id == id);
+            
             return View();
         }
     }
