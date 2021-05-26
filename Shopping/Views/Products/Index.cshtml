@@ -1,0 +1,24 @@
+﻿@{
+    var prds = (List<ProductModel>) ViewData["Products"];
+    ViewData["Title"] = "Coffee";
+}
+<h1>Coffes</h1>
+ <table style="width:100%" class="table table-striped table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+    @foreach (var prd in prds)
+    {
+        <tr>
+                <td>@prd.Id</td>
+                <td>@prd.Name</td>
+                <td>@prd.Price</td>
+                <td> <img src=@prd.img alt=@prd.Name height="100px"/></td>
+
+            </tr>
+        <br/>
+    }
+ </table> 
